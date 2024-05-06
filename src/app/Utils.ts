@@ -1,3 +1,6 @@
-export default const uperCaseString(str:string){
-    return str.toUpperCase()
+export function toUpserCase(arg: string) {
+    return arg.toUpperCase();
 }
+
+
+toUpserCase("abas");

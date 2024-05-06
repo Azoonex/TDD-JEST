@@ -1,8 +1,8 @@
 import type { Config } from "@jest/types";
 
 const config: Config.InitialOptions = {
-    preset: "node test",
-    testEnvironment: "node",
+    preset: "ts-jest",
+    testEnvironment : "node",
     verbose: true,
 };
 

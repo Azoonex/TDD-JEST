@@ -1,6 +1,23 @@
-export function toUpserCase(arg: string) {
+function toUpserCase(arg: string) {
     return arg.toUpperCase();
 }
 
+type itemsInfo = {
+    touperCase: string;
+    tolowerCase: string;
+    character: string[];
+    lenght: number;
+    extraInfo: object | undefined;
+};
 
-toUpserCase("abas");
+function togetUpercaseItems(arag: string): itemsInfo {
+    return {
+        touperCase: arag.toUpperCase(),
+        tolowerCase: arag.toLocaleLowerCase(),
+        character: Array.from(arag),
+        lenght: arag.length,
+        extraInfo: {},
+    };
+}
+
+export { toUpserCase, itemsInfo, togetUpercaseItems };

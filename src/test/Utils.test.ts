@@ -41,4 +41,15 @@ describe("Utils test String", () => {
             expect(actual.character).toContain<string>("A");
         });
     });
+
+    describe.only("TEST UPERCASE EXAPLE", () => {
+        it.each([
+            { input: "abc", expected: "ABC" },
+            { input: "Abas", expected: "ABAS" },
+            { input: "def", expected: "DEF" },
+        ])("$input test exaple to cunvert $expected", ({ input, expected }) => {
+            const actual = toUpserCase(input);
+            expect(actual).toBe(expected);
+        });
+    });
 });

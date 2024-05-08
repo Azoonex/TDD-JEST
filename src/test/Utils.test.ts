@@ -18,23 +18,27 @@ describe("Utils test String", () => {
         expect(actule).toBe(expected);
     });
 
-    it.only("should retrun info for valid string", () => {
-        const actual = togetUpercaseItems("Abas");
-
-        expect(actual.tolowerCase).toBe("abas");
-        expect(actual.extraInfo).toEqual({});
-
-        expect(actual.character.length).toBe(4);
-        expect(actual.character).toHaveLength(4);
-
-        expect(actual.character).toEqual(["A", "b", "a", "s"]);
-        expect(actual.character).toContain<string>("A");
-
-        expect(actual.character).toEqual(
-            expect.arrayContaining(["b", "A", "a", "s"])
-        );
-
-        expect(actual.extraInfo).not.toBe(undefined);
-        expect(actual.extraInfo).toBeTruthy()
+    describe("THIS IS BAST TEST FOR JAVASCRIPT TEST UPPERCASE CKARACTER", () => {
+        test("test to lowerCase", () => {
+            const actual = togetUpercaseItems("Abas");
+            expect(actual.tolowerCase).toBe("abas");
+        });
+        test("test to uperCase", () => {
+            const actual = togetUpercaseItems("Abas");
+            expect(actual.touperCase).toBe("ABAS");
+        });
+        test("test for tolowercase", () => {
+            const actual = togetUpercaseItems("Abas");
+            expect(actual.tolowerCase).toBe("abas");
+        });
+        test("to be ckaracter cunvert lenght", () => {
+            const actual = togetUpercaseItems("Abas");
+            expect(actual.lenght).toBe(4);
+        });
+        test("to content is the bast", () => {
+            const actual = togetUpercaseItems("Abas");
+            expect(actual.character).toEqual(["A", "b", "a", "s"]);
+            expect(actual.character).toContain<string>("A");
+        });
     });
 });

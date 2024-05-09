@@ -1,4 +1,4 @@
-import { toUpserCase, togetUpercaseItems } from "../app/Utils";
+import { StringUtils, toUpserCase, togetUpercaseItems } from "../app/Utils";
 
 // AAA PRINCIPLES
 // ARRANGE
@@ -9,6 +9,41 @@ import { toUpserCase, togetUpercaseItems } from "../app/Utils";
 // TEARDWON
 
 describe("Utils test String", () => {
+
+
+
+
+    describe.only('StringuTils Test',()=>{
+
+        let sut : StringUtils;
+
+
+        beforeEach(()=>{
+            sut = new StringUtils();
+            console.log('Setup')
+        })
+
+        afterEach(()=>{
+            console.log("return readwon")
+        })
+
+        it("should return correct upercase",()=>{
+            const sut = new StringUtils();
+            
+
+            const actual = sut.toUperCase('abas');
+
+            expect(actual).toBe('ABAS')
+        })
+    })
+
+
+
+
+
+
+
+
     it("Shoulde Test UperCaseITems", () => {
         const sut = toUpserCase;
         const expected = "ABC";

@@ -2,6 +2,14 @@ function toUpserCase(arg: string) {
     return arg.toUpperCase();
 }
 
+
+export class StringUtils {
+    public toUperCase(arg:string){
+        return toUpserCase(arg)
+    }
+}
+
+
 type itemsInfo = {
     touperCase: string;
     tolowerCase: string;

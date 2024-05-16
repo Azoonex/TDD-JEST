@@ -5,6 +5,9 @@ function toUpserCase(arg: string) {
 
 export class StringUtils {
     public toUperCase(arg:string){
+        if(!arg){
+            throw new Error("invalide areument")
+        }
         return toUpserCase(arg)
     }
 }

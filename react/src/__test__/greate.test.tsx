@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react"
 import { describe, expect, test } from "vitest"
-import Greet from "./Greet"
+import Greet from "../components/Greet"
 
-describe("GReet", () => {
+describe("GReets", () => {
     test.only("is Abas in the screen ?", () => {
         render(<Greet />);
         const textElemtn = screen.getByText(/abas/i);

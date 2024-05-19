@@ -4,7 +4,7 @@ import { describe, expect, test } from "vitest";
 
 
 describe("Application testring",()=>{
-    test("Does it exist button",()=>{
+    test("Does it exist button ?",()=>{
         render(<Application />)
         const inputElement = screen.getByRole("button");
         expect(inputElement).toBeInTheDocument()
@@ -20,4 +20,13 @@ describe("Application testring",()=>{
         const checkboxElment = screen.getByRole("checkbox");
         expect(checkboxElment).toBeInTheDocument()
     })
+
+    test("h1 Element",()=>{
+        render(<Application />);
+        const h1Elment = screen.getByRole("heading",{
+            level: 1
+        });
+        expect(h1Elment).toBeInTheDocument()
+    })
+
 })

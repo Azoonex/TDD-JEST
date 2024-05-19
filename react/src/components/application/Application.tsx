@@ -1,9 +1,9 @@
 const Application = () => {
     return (
         <>
-            {/* <h1>Job application form</h1>
+            <h1>Job application form</h1>
             <h2>Section 1</h2>
-            <p>All fields are mandatory</p>
+            {/*  <p>All fields are mandatory</p>
             <span title="close">X</span>
             <img src="https://via.placeholder.com/150" alt="a person with a laptop" />
             <div data-testid="custom-element">Custom HTML element</div> */}
@@ -35,11 +35,13 @@ const Application = () => {
                 </div>
                 <div>
                     <label>
-                        <input type="checkbox" id="terms" /> I agree to the terms and
+                        <input type="checkbox" name="checkbox1" id="terms" /> I agree to the terms and
                         conditions
                     </label>
                 </div>
                 <button disabled>Submit</button>
+
+                
             </form>
         </>
     )

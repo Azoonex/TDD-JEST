@@ -40,7 +40,8 @@ const Application = () => {
                     </label>
                 </div>
                 <button disabled>Submit</button>
-
+                <label htmlFor="newInpt">indexMain</label>
+                <input type="text" name="newInput" id="newInput" />
                 
             </form>
         </>

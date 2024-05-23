@@ -5,7 +5,8 @@ const Application = () => {
             <h2>Section 1</h2>
             <input type="text" value="amirabas" onChange={() => {}} />
             <img src="https://explample.com" alt="not found" />
-            <form>
+            <span title="close">X</span>
+            <form> 
                 <div>
                     <p>All fields are mandatory</p>
                     <label htmlFor="name">Name</label>

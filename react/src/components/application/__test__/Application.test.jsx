@@ -46,6 +46,9 @@ describe("Application testring", () => {
         const imageElement = screen.getByAltText("not found");
         expect(imageElement).toBeInTheDocument()
 
+        const closeElement = screen.getByTitle("close");
+        expect(closeElement).toBeInTheDocument()
+
     })
 
 })

@@ -33,6 +33,16 @@ describe("Application testring", () => {
         render(<Application />)
         const nameElement2 = screen.getByLabelText("indexMain")
         expect(nameElement2).toBeInTheDocument()
+
+        const nameLeement3 = screen.getByPlaceholderText("fullName")
+        expect(nameLeement3).toBeInTheDocument()
+
+        const nameLeement4 = screen.getByText("All fields are mandatory")
+        expect(nameLeement4).toBeInTheDocument()
+
+        const nameLeement5 = screen.getByDisplayValue("amirabas")
+        expect(nameLeement5).toBeInTheDocument()
+
     })
 
 })

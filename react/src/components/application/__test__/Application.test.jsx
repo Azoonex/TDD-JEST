@@ -29,4 +29,10 @@ describe("Application testring", () => {
         expect(h1Elment).toBeInTheDocument()
     })
 
+    test("Renders correctly",()=>{
+        render(<Application />)
+        const nameElement2 = screen.getByLabelText("indexMain")
+        expect(nameElement2).toBeInTheDocument()
+    })
+
 })

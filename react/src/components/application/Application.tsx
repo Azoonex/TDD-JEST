@@ -4,6 +4,7 @@ const Application = () => {
             <h1>Job application form</h1>
             <h2>Section 1</h2>
             <input type="text" value="amirabas" onChange={() => {}} />
+            <img src="https://explample.com" alt="not found" />
             <form>
                 <div>
                     <p>All fields are mandatory</p>

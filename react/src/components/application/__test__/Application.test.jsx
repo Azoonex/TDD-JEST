@@ -43,6 +43,9 @@ describe("Application testring", () => {
         const nameLeement5 = screen.getByDisplayValue("amirabas")
         expect(nameLeement5).toBeInTheDocument()
 
+        const imageElement = screen.getByAltText("not found");
+        expect(imageElement).toBeInTheDocument()
+
     })
 
 })

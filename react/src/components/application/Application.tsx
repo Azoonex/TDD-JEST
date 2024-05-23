@@ -6,6 +6,9 @@ const Application = () => {
             <input type="text" value="amirabas" onChange={() => {}} />
             <img src="https://explample.com" alt="not found" />
             <span title="close">X</span>
+            <div data-testid="custom-div">
+                custom html element
+            </div>
             <form> 
                 <div>
                     <p>All fields are mandatory</p>

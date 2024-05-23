@@ -47,7 +47,10 @@ describe("Application testring", () => {
         expect(imageElement).toBeInTheDocument()
 
         const closeElement = screen.getByTitle("close");
-        expect(closeElement).toBeInTheDocument()
+        expect(closeElement).toBeInTheDocument();
+
+        const customElment = screen.getByTestId("custom-div");
+        expect(customElment).toBeInTheDocument();
 
     })
 

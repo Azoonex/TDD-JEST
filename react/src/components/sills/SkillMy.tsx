@@ -4,7 +4,6 @@ import { SkillsProps } from "./TypeSkill"
 export default function SkillMy({ skill }: SkillsProps) {
 
     const [isLoggedIn, setIsLoggedIn] = useState(false)
-
     return (
         <>
             <ul>

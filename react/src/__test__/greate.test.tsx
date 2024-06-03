@@ -17,3 +17,18 @@ describe("GReets", () => {
         })
     })
 })
+
+const colors = ['read', 'yellow', 'blue']
+
+const [red, yellow, blue] = colors
+
+interface TypeNames {
+    name : string,
+    lastName : string,
+    age: number | string
+}
+
+const names: TypeNames = { name: 'alireza', lastName: 'amirabas', age: 0 }
+
+const { name, lastName, age } = names
+

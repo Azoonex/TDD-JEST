@@ -1,4 +1,4 @@
-import { screen, render } from "@testing-library/react";
+import { screen, render, logRoles } from "@testing-library/react";
 import Application from '../Application'
 import { describe, expect, test } from "vitest";
 
@@ -21,9 +21,10 @@ describe("Application testring", () => {
         expect(checkboxElment).toBeInTheDocument()
     })
 
-    test("h1 Element", () => {
-        render(<Application />);
-        const h1Elment = screen.getByRole("heading", {
+    test("h1 Element", async () => {
+       const view =  render(<Application />);
+       logRoles(view.container)
+        const h1Elment = await screen.getByRole("heading", {
             level: 1
         });
         expect(h1Elment).toBeInTheDocument()

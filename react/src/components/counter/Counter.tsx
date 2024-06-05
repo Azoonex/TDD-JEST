@@ -4,7 +4,7 @@ export default function Counter() {
     const [count, setCount] = useState(0);
     return (
         <div>
-            {count}
+            <h3>{count}</h3>
             <button onClick={() => setCount(count + 1)}>Increment</button>
         </div>
     )

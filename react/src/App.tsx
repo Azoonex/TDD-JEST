@@ -1,12 +1,11 @@
 import './App.css'
+import Counter from './components/counter/Counter'
 
 function App() {
 
   return (
     <div>
-      <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-        Learn React
-      </a>
+        <Counter />
     </div>
   )
 }

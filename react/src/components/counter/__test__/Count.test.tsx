@@ -14,7 +14,6 @@ describe("Counter", () => {
         expect(incrementButton).toBeInTheDocument();
     })
 
-
     test("render a count of 1 after clicking the increment button", async ()=>{
         userEvent.setup()
         render(<Counter />);

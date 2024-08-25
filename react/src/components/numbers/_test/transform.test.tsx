@@ -25,3 +25,5 @@ it('check the thit is Nan', () => {
 
     expect(resultAge).toBeTypeOf('boolean')
 })
+
+// course 33

@@ -16,3 +16,4 @@ it('math Test',()=>{
 
 
 // rules test AAA Acrenge / act / assert
+// toBytype / toBeNan
